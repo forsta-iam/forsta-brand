@@ -1,15 +1,12 @@
-<!DOCTYPE html>
+{% load staticfiles %}<!DOCTYPE html>
 <html>
 <head>
     <title>{% block title %}{{ title }}{% endblock %}</title>
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha384-qpNsn9fNAkiBXwcwfxPTn1Ou6UU9P6pYGWQqLRIJOlPsAKOA+8XzN2coCnVnb8Fa" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ STATIC_URL }}css/base.css" type="text/css">
+    <link rel="stylesheet" href="{% static "css/base.css" %}" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="{{ STATIC_URL}}js/menus.js"></script>
-    <script type="text/javascript" src="{{ STATIC_URL}}lib/jquery/dist/jquery.min.js"></script>
-    <!--<link rel="stylesheet" href="{{ STATIC_URL}}lib/bootstrap/dist/css/bootstrap.min.css">-->
     {% block extra_head %}{% endblock %}
 </head>
 <body>
